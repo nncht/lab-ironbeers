@@ -2,7 +2,20 @@
 
   <img src='{{this.image_url}}' alt='' />
   <h2>{{this.name}}</h2>
+
   <h3>{{this.tagline}}</h3>
+
   <div>{{this.description}} </div>
+
+  <h4>Food Pairing</h4>
+
+  <ul>
+    {{#each this.food_pairing}}
+      <li>{{this}}</li>
+    {{/each}}
+
+  </ul>
+
+  <div><b>Brewer's Tips:</b> {{this.brewers_tips}} </div>
 
 {{/each}}
