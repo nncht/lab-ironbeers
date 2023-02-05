@@ -14,8 +14,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
-// ...
-
 // Add the route handlers here:
 
 app.get('/', (req, res) => {
@@ -36,6 +34,16 @@ app.get('/random-beers', (req, res) => {
     .getRandom()
     .then(randomBeerFromApi => {
       res.render('random-beers', { randomBeerFromApi });
+    })
+    .catch(error => console.log(error));
+});
+
+app.get('/beers/:id', (req, res) => {
+  punkAPI
+    .getBeer(req.params.id)
+    .then(beer => {
+      console.log(beer);
+      res.render('beer', { beer });
     })
     .catch(error => console.log(error));
 });
