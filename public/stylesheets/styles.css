@@ -55,7 +55,10 @@ footer {
   color: #f7f9f9;
   padding: 20px;
   font-weight: 700;
-  margin-top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
 }
 
 button {
@@ -93,7 +96,6 @@ button {
   display: flex;
   flex-direction: column;
   width: 450px;
-  border: solid 1px black;
   margin: 30px;
   padding: 4px;
 }
