@@ -1,12 +1,9 @@
-
-<div>     {{!-- display flex flex wrap --}}
-
+<div="beers-overview">
 {{#each beersFromApi}}
 
+<div class="beer-card">
 {{> beerpartial}}
-{{!-- display flex
-column--}}
+</div>
 
 {{/each}}
-
 </div>
