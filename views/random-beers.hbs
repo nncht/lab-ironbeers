@@ -1,20 +1,7 @@
-
-{{!-- display flex --}}
-
-
 {{#each randomBeerFromApi}}
 
- {{> beerpartial}}
+{{> beerpartial}}
 
-  <h4>Food Pairing</h4>
-
-  <ul>
-    {{#each this.food_pairing}}
-      <li>{{this}}</li>
-    {{/each}}
-
-  </ul>
-
-  <div><b>Brewer's Tips:</b> {{this.brewers_tips}} </div>
+{{> extrainfo}}
 
 {{/each}}
