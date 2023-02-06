@@ -31,6 +31,7 @@ body {
   background-color: #f7f9f9;
   display: flex;
   flex-direction: column;
+  flex-direction: center;
   min-height: 100vh;
   margin: 0;
 }
@@ -62,7 +63,7 @@ nav {
   padding: 30px 50px;
   font-weight: 700;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 footer {
@@ -116,10 +117,25 @@ button {
   padding: 4px;
 }
 
+.single-beer {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 4px;
+  zoom: 150%;
+}
+
+.single-beer-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .beer-image {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  padding: 0px 75px 0px 0px;
 }
 
 .beer-image img {
